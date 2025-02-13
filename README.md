@@ -1,4 +1,4 @@
-# Multiplication Table Project
+# Multiplication Table 
 
 ## Author
 **Karina Lorenzo**
