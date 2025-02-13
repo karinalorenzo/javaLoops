@@ -1,17 +1,15 @@
 package dev.karina.java_loops;
 
-/**
- * Hello world!
- */
-public final class App {
-    private App() {
-    }
+import dev.karina.java_loops.MultiplicationTable.MultiplicationTable;
+import java.util.List;
 
-    /**
-     * Says hello to the world.
-     * @param args The arguments of the program.
-     */
+public class App {
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        int n = 5; // Puedes cambiar este valor para probar diferentes tablas de multiplicar
+        List<String> table = MultiplicationTable.generateTable(n);
+        for (String line : table) {
+            System.out.println(line);
+        }
     }
 }
+
