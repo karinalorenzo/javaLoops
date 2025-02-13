@@ -47,4 +47,20 @@ public class MultiplicationTableTest{
         List<String> result = MultiplicationTable.generateTable(n);
         assertEquals(expected, result);
     }
+
+    @Test
+    @DisplayName("Test the multiplication table of Integer.MAX_VALUE")
+    @Tag("Multiplication")
+    public void testMultiplicationTableMaxValue() {
+        int n = Integer.MAX_VALUE;
+        List<String> expected = List.of(
+            "2147483647 x 1 = 2147483647", "2147483647 x 2 = 4294967294", 
+            "2147483647 x 3 = 6442450941", "2147483647 x 4 = 8589934588", 
+            "2147483647 x 5 = 10737418235", "2147483647 x 6 = 12884901882", 
+            "2147483647 x 7 = 15032385529", "2147483647 x 8 = 17179869176", 
+            "2147483647 x 9 = 19327352823", "2147483647 x 10 = 21474836470"
+        );
+        List<String> result = MultiplicationTable.generateTable(n);
+        assertEquals(expected, result);
+    }
 }
