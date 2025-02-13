@@ -63,4 +63,20 @@ public class MultiplicationTableTest{
         List<String> result = MultiplicationTable.generateTable(n);
         assertEquals(expected, result);
     }
+
+    @Test
+    @DisplayName("Test the multiplication table of Integer.MIN_VALUE")
+    @Tag("Multiplication")
+    public void testMultiplicationTableMinValue() {
+        int n = Integer.MIN_VALUE;
+        List<String> expected = List.of(
+            "-2147483648 x 1 = -2147483648", "-2147483648 x 2 = -4294967296", 
+            "-2147483648 x 3 = -6442450944", "-2147483648 x 4 = -8589934592", 
+            "-2147483648 x 5 = -10737418240", "-2147483648 x 6 = -12884901888", 
+            "-2147483648 x 7 = -15032385536", "-2147483648 x 8 = -17179869184", 
+            "-2147483648 x 9 = -19327352832", "-2147483648 x 10 = -21474836480"
+        );
+        List<String> result = MultiplicationTable.generateTable(n);
+        assertEquals(expected, result);
+    }
 }
